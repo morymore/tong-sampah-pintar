@@ -88,6 +88,9 @@
             const id = document.getElementById('idInput').value.trim();
             const s = students.find(x => x.id === id);
             if(s) {
+
+                fetchData();
+
                 document.getElementById('loginCard').classList.add('hidden');
                 document.getElementById('resultCard').classList.remove('hidden');
                 document.getElementById('resNama').innerText = s.nama;
@@ -108,4 +111,5 @@
 </body>
 
 </html>
+
 
